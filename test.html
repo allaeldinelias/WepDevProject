@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function swap() {
+    //alert("test");
+    //alert(window.document.pic.src);
+    //if(window.document.getElementById("picc").src.endsWith('images/pic2.jpg') != -1)
+    if(window.document.pic.src == 'http://127.0.0.1:21731/images/pic1.jpg')
+    {
+        window.document.pic.src='images/pic2.jpg';
+    }
+    else if(window.document.pic.src == 'http://127.0.0.1:21731/images/pic2.jpg')
+    {
+        window.document.pic.src='images/pic1.jpg';
+    }
+}
+</script>
+
+</head>
+<body>
+<img src="images/pic1.jpg" name="pic" id="picc" onclick="swap()">
+</body>
+</html>

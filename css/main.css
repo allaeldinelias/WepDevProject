@@ -1,0 +1,153 @@
+@import url("//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+
+/* don't want to update until everything is retrieved*/
+
+body {
+    display: none;
+}
+/* this is where you put your custom css */
+
+img {
+    max-width: 100%;
+}
+h2 {
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+.item {
+    background: #333;
+    text-align: center;
+    height: 450px !important;
+}
+.carousel {
+    margin-top: 20px;
+}
+.bs-example {
+    margin: 20px;
+}
+input[type*="text"],
+input[type*="email"],
+textarea {
+    width: 100%;
+}
+
+td{
+    padding-right: 25px;
+}
+
+aside{
+    float: left;
+}
+
+aside img {
+	border: 1px solid black;
+}
+
+article{
+    float: left;
+    margin-left: 30px;
+}
+
+#right{
+    clear: both;
+    margin-top: 45px;
+}
+
+#footer{
+    clear: both;
+    text-align: center;
+}
+
+ul {
+	text-align: left;
+}
+
+li {
+	margin: 3px 0;
+}
+
+#carousel {
+	margin: 10px 0 0 0;
+	padding: 0;
+	width: 400px;
+	height: 75px;
+}
+.button	{
+	margin: 25px 10px;
+	float: left;
+	height: 25px;
+	width: 25px;
+}
+.panel {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 225px;
+	height: 65px;
+}
+.panel-inner {
+	left: 0;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.panel-inner li	{
+	text-align: center;
+	padding: 0;
+	margin: 0 3px;
+	float: left;
+	width: 50px;
+	height: 65px;
+	background: #FFF
+}
+.panel-inner li img	{
+	width: 50px;
+	height: 65px;
+}
+#rightbutton{
+    float: left;
+}
+
+/*Start: The formatting of navigation bar*/
+#navigation {
+    float: left;
+	margin: 10px 0 0 17px;
+	padding: 0;
+	list-style: none;
+}
+#navigation li {
+	list-style: none;
+	width: 135px;
+	font-size: 11px;
+	text-align: left;
+	background-color: #E9967A;
+	padding: .6em 0 .6em 2em;
+	margin-left: 5px;
+}
+/*first child background color is different with others*/
+#navigation li:first-child {
+	width: 139px;
+	font-size: 13px;
+	background-color: #F2901C;
+	margin-bottom: 0;
+	font-weight: bold;
+	padding-left: 1em;
+}
+#navigation li a{
+	display: block;
+    font-weight: bold;
+}
+#navigation a.current{
+	background-color: yellow;
+}
+/*end*/
+
+#articlecontent{
+    float: right;
+    width: 80%;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery+RequireJS About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="nav"></div>
+        <div id="content">
+        <aside>
+            <a href="image.html"><img src="images/pic5.jpg" width="325" height="400" alt="image" name="pic" id="picc" onclick="swap()"/></a>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <!-- JavaScript HTML requirements -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+            <script type="text/javascript">
+                function swap6() {
+                    window.document.pic.src='images/pic6.jpg';
+                }
+                function swap7() {
+                    window.document.pic.src='images/pic7.jpg';
+                }
+                function swap9() {
+                    window.document.pic.src='images/pic9.jpg';
+                }
+                function swap10() {
+                    window.document.pic.src='images/pic10.jpg';
+                }
+                function swap11() {
+                    window.document.pic.src='images/pic11.jpg';
+                }
+                function swap12() {
+                    window.document.pic.src='images/pic12.jpg';
+                }
+                function swap13() {
+                    window.document.pic.src='images/pic13.jpg';
+                }
+            </script>
+            <div id="carousel">
+            <div class="button" id="left"><img src="images/left.jpg" alt="left button"></div>
+            <div class="panel">
+                <ul class="panel-inner">
+                	<li><img src="images/pic6.jpg" alt="Jeffrey Toobin" name="pic6" onclick="swap6()"></li>
+            		<li><img src="images/pic7.jpg" alt="Andrew Ross Sorkin" name="pic7" onclick="swap7()"></li>
+            		<li><img src="images/pic11.jpg" alt="Amy Chua" name="pic11" onclick="swap11()"></li>
+            		<li><img src="images/pic9.jpg" alt="Scott Sampson" name="pic9" onclick="swap9()"></li>
+     				<li><img src="images/pic10.jpg" alt="Carlos Eire" name="pic10" onclick="swap10()"></li>
+                    <li><img src="images/pic12.jpg" alt="Carlos Eire" name="pic12" onclick="swap12()"></li>
+                    <li><img src="images/pic13.jpg" alt="Carlos Eire" name="pic13" onclick="swap13()"></li>
+                </ul>
+            </div>
+            <div class="button" id="rightbutton"><img src="images/right.jpg" alt="right button"></div>
+            </div>
+        </aside>
+        <article>
+            <h4>Product: photo album series</h4>
+            <p>Price: 235$</p>
+            <p>Product Code: 1124332</p>
+            <p>Marketing Info: 50% discount during christmas</p>
+            <label for="order_type">Select Series:</label>
+            <select name="order_type" id="order_type">
+				<option value="1">Series 1</option>
+				<option value="2">Series 2</option>
+                <option value="3">Series 3</option>
+            </select>
+            <br>
+            <p>Ships from and sold by JMDEnterprises. </p>
+            <ul>
+				<li>
+					Lifetime Warranty on Mechanism
+				</li>
+				<li>
+					Windproof Lighter
+				</li>
+				<li>
+					Refillable with Butane
+				</li>
+				<li>
+					No Lighter Fluid After Taste
+				</li>
+			</ul>
+            <a class="btn btn-lg btn-success" href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=833SC4FCA6Y3E">Buy Now</a>
+        </article>
+        <aside id="right">
+            <h1>Album Series</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#" name="serie1">Series 1</a>
+                </li>
+                <li><a href="#" name="serie2">Series 2</a>
+                </li>
+                <li><a href="#" name="serie3">Series 3</a>
+                </li>
+            </ul>
+            <div id="newsstory">This is where we see the latest news story</div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+            <script>
+                jQuery("document").ready(function () {
+                    jQuery(".nav-tabs a").click(function () {
+                        jQuery("#newsstory").load(this.name + ".html");
+                        jQuery(".active").removeClass("active");
+                        jQuery(this).parent().addClass("active");
+                    });
+                });
+            </script>
+        </aside>
+        </div>
+        <div id="footer"></div>
+        </div>
+    <script data-main="js/app" src="js/lib/require.js"></script>
+</body>
+
+</html>
